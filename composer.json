@@ -1,0 +1,29 @@
+{
+  "name": "longhinsamuele/yii2-qr",
+  "description": "new Yii2 ActiveRecord ",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "qr",
+    "qrcode",
+    "serialize"
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Samuele Longhin",
+      "email": "longhin.samuele@outlook.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "2amigos/qrcode-library": "~1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "samuelelonghin\\qr\\": ""
+    }
+  }
+}
