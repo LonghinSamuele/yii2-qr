@@ -4,7 +4,6 @@
 namespace samuelelonghin\qr;
 
 
-use app\widgets\QrCode;
 use Da\QrCode\Writer\SvgWriter;
 use yii\helpers\Url;
 
