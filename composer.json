@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "samuelelonghin\\qr\\": ""
+      "samuelelonghin\\qr\\": "src"
     }
   }
 }
