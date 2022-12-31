@@ -18,13 +18,16 @@ trait ModelSerializable
     /**
      * @return string
      */
-    public abstract static function getController();
+    public abstract static function getController():string;
+
+    protected $qrUrlAction = 'view';
+    protected $qrUrlPk = 'id';
 
     public abstract function getId();
 
     public function getQr(): QrCode
     {
-        return (new QrCode(Url::to([static::getController() . '/view', 'id' => $this->getId()], 'https'), null, new SvgWriter()))
+        return (new QrCode(Url::to([static::getController() . "/{$this->qrUrlAction}", $this->qrUrlPk => $this->getId()], 'https'), null, new SvgWriter()))
             ->setSize(100)
             ->useForegroundColor(0, 123, 255)
             ->setMargin(5);
